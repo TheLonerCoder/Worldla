@@ -7,57 +7,40 @@
     
 // }
 
-.brazil {
-    fill: rgba(255, 0, 0, 0.671);
-}
 
-.Australia {
-    fill: blue;
-    // background-color: green;
+// figure {
+//     border: black 3px solid;
+// }
 
-    &:hover {
-        fill: lighten($color: blue, $amount: 20);
-        cursor: pointer;
-    }
-}
+// "background: linear-gradient(60deg, #00a849 40%, #009869 60%, #00857b);"
+
 
 svg {
-    fill: #7f7f7f;
-    // border: solid;
-    // stroke: black;
 
-    stroke: lighten($color: black, $amount: 20);
-    stroke-width: 1px;
-    // stroke-dasharray: 2,2;
-    stroke-linejoin: round;
-
-    &:hover {
-        color: lighten($color: #7f7f7f, $amount: 20);
-    }
-
-    // box-shadow: black 2px 2px 2px;
-
-
-    // width: 50;
-    // height: 50;
-    // width: 100%;
-    // height: 100%;
-
-
-    transform: scale(.5);
-
-    border: #f6edd9 solid 10px;
-
-    background-color: #1a7ba6;
-
-    padding: 100px;
-
-    // align-self: start;
+    // border: #f6edd9 solid 10px;
 
 
     position: absolutes;
     top: 10px;
     left: 10px;
+    // overflow: scroll;
+
+        &:hover {
+            cursor: zoom-in;
+        }
+
+    
+}
+
+
+.worldmap__figure-container {
+    // border: #f6edd9 solid 10px;
+    border: $bluegreen solid 6px;
+    border-radius: 8px;
+    width: 640px;
+
+
+    
 }
 
 // .map {
@@ -67,31 +50,40 @@ svg {
 // }
 
 
-.Canada {
-    fill: green;
-}
-
-.Algeria {
-    fill: pink;
-}
-
-
-.Mexico {
-    fill: orange;
-}
-
 
 
 h1 {
     // font-family: $mainFont;
     font-family: 'Fredoka One', cursive;
     letter-spacing: .1rem;
-    text-align: left;
-    margin-left: 30px;
+    text-align: center;
+    // margin-left: 30px;
+    margin-top: 0;
+    color: white;
+    padding-bottom: 15px;
+    padding-top: 10px;
 }
 
 
-.langBox {
-    background-color: red;
+#Appbody {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+
+}
+
+#grid1 {
+    grid-area: 1 / 1 / 2 / 2; 
+}
+
+
+#grid2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+// .langBox {
+//     background-color: red;
     
-}
+// }

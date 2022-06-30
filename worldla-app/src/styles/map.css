@@ -1,56 +1,55 @@
 @import url(c:\Users\Stephon\Documents\GitHub\Worldla\worldla-app\src\styles\Variables\fonts.css);
-.brazil {
-  fill: rgba(255, 0, 0, 0.671);
-}
-
-.Australia {
-  fill: blue;
-}
-
-.Australia:hover {
-  fill: #6666ff;
-  cursor: pointer;
-}
-
 svg {
-  fill: #7f7f7f;
-  stroke: #333333;
-  stroke-width: 1px;
-  stroke-linejoin: round;
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
-  border: #f6edd9 solid 10px;
-  background-color: #1a7ba6;
-  padding: 100px;
   position: absolutes;
   top: 10px;
   left: 10px;
 }
 
 svg:hover {
-  color: #b2b2b2;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
 }
 
-.Canada {
-  fill: green;
-}
-
-.Algeria {
-  fill: pink;
-}
-
-.Mexico {
-  fill: orange;
+.worldmap__figure-container {
+  border: #00857b solid 6px;
+  border-radius: 8px;
+  width: 640px;
 }
 
 h1 {
   font-family: 'Fredoka One', cursive;
   letter-spacing: .1rem;
-  text-align: left;
-  margin-left: 30px;
+  text-align: center;
+  margin-top: 0;
+  color: white;
+  padding-bottom: 15px;
+  padding-top: 10px;
 }
 
-.langBox {
-  background-color: red;
+#Appbody {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+#grid1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+#grid2 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 2 / 2 / 3;
 }
 /*# sourceMappingURL=map.css.map */

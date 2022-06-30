@@ -1,0 +1,119 @@
+@import './colors.scss';
+@import './Variables/fonts.scss';
+
+
+body {
+    background-color: white;
+}
+
+// .searchDivs2, .searchDivs4 {
+//     background-color: $navyblue;
+//     color: white;
+// }
+
+.searchDivs {
+    // background-color: $navyblue;
+    // background-color: $darkgreen;
+    // background-color: $darkgreen;
+    // border-bottom: darkgreen solid 2px;
+    // background: linear-gradient(60deg, #00a849 40%, #009869 60%, #00857b);
+    // color: darken($color: white, $amount: 10);
+    color: gray;
+    padding: 4px 0 6px 0;
+
+
+    // box-shadow: inset 1px 1px 2px darkgreen;
+    
+    font-family: $font2;
+
+    &:hover {
+        // background: opacity($color: 1)
+        // background: lighten($color: $darkgreen, $amount: 20);
+        // color: darken($color: white, $amount: 60);
+        color: white;
+        background-color: $navyblue;
+
+        // background-color: linear-gradient(60deg, #00a849 40%, #009869 60%, #00857b);
+
+    }
+}
+
+
+#searchBox {
+    width: 400px;
+    border: $bluegreen 2px solid;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+header  {
+    font-family: $mainFont;
+    // background-color: $darkgreen;
+    background: linear-gradient(60deg, #00a849 40%, #009869 60%, #00857b);
+
+
+    #langHead {
+        margin: 0;
+        padding: 0 0 20px 0;
+        color: lighten($color: white, $amount: 10);
+        text-align: center;
+    }
+}
+
+.iconics {
+    margin-right: 5px;
+    visibility: hidden;
+
+    &:hover {
+        visibility: visible;
+    }
+}
+
+.icons {
+    margin-right: 8px;
+}
+
+
+
+#langSearch {
+    margin-bottom: 10px;
+    border: solid $navyblue 2px;
+    margin-right: 5px;
+    border-radius: 10px;
+
+}
+
+
+#searchButton {
+    background-color: $bluegreen;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 6px;
+    margin-right: 5px;
+
+        &:hover {
+            background-color: lighten($color: $bluegreen, $amount: 10);
+        }
+}
+
+#clearButton {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    // padding-bottom: 6px;
+    padding: 6px 8px;
+
+        &:hover {
+            background-color: darken($color: red, $amount: 10);
+        }
+}
+
+button {
+    font-family: $font3;
+    font-weight: bold;
+}
+

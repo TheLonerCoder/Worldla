@@ -1,1 +1,84 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  background-color: white;
+}
+
+.searchDivs {
+  color: gray;
+  padding: 4px 0 6px 0;
+  font-family: "Lato", sans-serif;
+}
+
+.searchDivs:hover {
+  color: white;
+  background-color: #2f4858;
+}
+
+#searchBox {
+  width: 400px;
+  border: #00857b 2px solid;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+header {
+  font-family: "Fredoka One", cursive;
+  background: linear-gradient(60deg, #00a849 40%, #009869 60%, #00857b);
+}
+
+header #langHead {
+  margin: 0;
+  padding: 0 0 20px 0;
+  color: white;
+  text-align: center;
+}
+
+.iconics {
+  margin-right: 5px;
+  visibility: hidden;
+}
+
+.iconics:hover {
+  visibility: visible;
+}
+
+.icons {
+  margin-right: 8px;
+}
+
+#langSearch {
+  margin-bottom: 10px;
+  border: solid #2f4858 2px;
+  margin-right: 5px;
+  border-radius: 10px;
+}
+
+#searchButton {
+  background-color: #00857b;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 6px;
+  margin-right: 5px;
+}
+
+#searchButton:hover {
+  background-color: #00b8aa;
+}
+
+#clearButton {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 6px 8px;
+}
+
+#clearButton:hover {
+  background-color: #cc0000;
+}
+
+button {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */

@@ -4,6 +4,8 @@ import './styles/map.css';
 import './App.css';
 import Maps from './components/map';
 import { DataPres } from './components/mapInfo';
+import WorldmapApp from './components/worldmap';
+import SearchBox from './components/searchLayout';
 // import { dataPres } from './components/mapInfo';
 
 
@@ -12,12 +14,16 @@ function App() {
     <div className="App">
 
       {/* <img src={map} alt="world-map" /> */}
-      <div className="map">
+      {/* <div className="map">
         <h1>Worldla</h1>
+      </div> */}
+
+      <div id='Appbody'>
+        <WorldmapApp id="grid1"/>
+        
         {/* {countryEntered} */}
-        <DataPres />
+        {/* <DataPres /> */}
         {/* <Maps /> */}
-      </div>
 
       {/* <svg>
         <use href='#maps'></use>
@@ -25,6 +31,9 @@ function App() {
 
       <img src="world.svg" alt="map" id='maps'/> */}
       {/* <img src="BlankMap-World.svg" alt="map2" /> */}
+      
+        {/* <SearchBox id="grid2"/> */}
+      </div>
     </div>
   );
 }
