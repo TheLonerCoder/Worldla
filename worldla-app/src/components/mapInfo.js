@@ -1,5 +1,5 @@
 import { countryData }  from '../data/countries.js';
-import { countryLang } from '../data/languages.js';
+import { countryLanguages } from '../data/languages.js';
 import '../styles/map.css';
 
 
@@ -30,7 +30,7 @@ let filteredLang = function searchCountry () {
 let fullLanguageName = function searchLanguages () {
     // console.log(`Language : ${countryLang[filteredLang]}`);
     // TODO will always have to cleanup
-    return [countryLang[filteredLang()[0]], countryLang[filteredLang()[1]]];
+    return [countryLanguages[filteredLang()[0]], countryLanguages[filteredLang()[1]]];
 }
 
 

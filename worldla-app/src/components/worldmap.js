@@ -2,14 +2,13 @@
 import React, { useState } from 'react';
 import Worldmap from 'react-svg-worldmap';
 // import './styles/map.css'
-import { countryLang } from '../data/languages';
+import countryLanguages from '../data/languages';
 import { countryData } from '../data/countries';
 import SearchBox from './searchLayout';
 
 function WorldmapApp() {
   
-  const [country, pushCountry] = useState([]);
-  
+  const [country, pushCountry] = useState([]);  
 
   const countryLang = () => {
 
@@ -24,6 +23,7 @@ function WorldmapApp() {
     let lang = 'en';
 
   }
+
 
 
 
@@ -95,6 +95,9 @@ function clearMap () {
   return (
     <div className="App">
 
+        {/* <button onClick={languageList}>Debug</button> */}
+
+
           <Worldmap 
             color="lightgreen"
             value-suffix="languages"
@@ -107,7 +110,7 @@ function clearMap () {
           />
 
 
-          <SearchBox id="grid2" tested={testing} clear={clearMap} frenches={french}/>
+          <SearchBox id="grid2" tested={testing} clear={clearMap} frenches={french} />
 
           <div className="langBox">
                

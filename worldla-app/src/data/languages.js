@@ -1,4 +1,4 @@
-const countryLang = {
+const countryLanguages = {
   "aa": {
     "name": "Afar",
     "native": "Afar"
@@ -752,4 +752,4 @@ const countryLang = {
 }
 
 
-export { countryLang };
+export default countryLanguages ;

@@ -20,6 +20,7 @@ body {
     // color: darken($color: white, $amount: 10);
     color: gray;
     padding: 4px 0 6px 0;
+    background-color: white;
 
 
     // box-shadow: inset 1px 1px 2px darkgreen;
@@ -39,11 +40,39 @@ body {
 }
 
 
+.selectedDivs {
+    color: white;
+    padding: 4px 0 6px 0;
+    background-color: $navyblue;
+
+
+    // box-shadow: inset 1px 1px 2px darkgreen;
+    
+    font-family: $font2;
+
+    // &:hover {
+    //     // background: opacity($color: 1)
+    //     // background: lighten($color: $darkgreen, $amount: 20);
+    //     // color: darken($color: white, $amount: 60);
+    //     color: white;
+    //     background-color: $navyblue;
+
+    //     // background-color: linear-gradient(60deg, #00a849 40%, #009869 60%, #00857b);
+
+    // }
+}
+
+
+
+
 #searchBox {
     width: 400px;
     border: $bluegreen 2px solid;
     border-radius: 10px;
     margin-bottom: 10px;
+
+    height: 50vh;
+    overflow: scroll;
 
 }
 
@@ -115,5 +144,20 @@ header  {
 button {
     font-family: $font3;
     font-weight: bold;
+}
+
+
+
+#refreshButton {
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 6px;
+    margin: 5px 0 10px 0;
+
+        &:hover {
+            background-color: darken($color: orange, $amount: 10);
+        }
 }
 

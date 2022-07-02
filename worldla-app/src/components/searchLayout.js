@@ -1,11 +1,113 @@
 import React, {useState} from "react";
-import { countryLang } from '../data/languages';
+import countryLanguages from "../data/languages";
 import { countryData } from '../data/countries';
 import '../styles/style.css';
 import { FaGlobeAmericas, FaGlobeAsia, FaGlobeAfrica, FaGlobeEurope } from 'react-icons/fa'
 import WorldmapApp from "./worldmap";
 
+
+
+// function changeDivColor () {
+//     if (document.getElementsByClassName('iconics'[0]).style.backgroundColor = 'white') {
+//         document.getElementsByClassName('iconics'[0]).style.backgroundColor = 'black'
+//     } else {document.getElementsByClassName('iconics'[0]).style.backgroundColor = 'white'}
+// }
+
+
+
 function SearchBox (props) {
+
+// const changeDivColor = event => {
+//     if (event.currentTarget.style.backgroundColor === 'white') {
+//         event.currentTarget.style.backgroundColor = 'black'
+//     } else {event.currentTarget.style.backgroundColor = 'white'}
+// }
+
+// const [color, changeColor] = useState('white');
+// const [textColor, changeTextColor] = useState('grey');
+
+// function divColors () {
+//     if (color === 'white') {
+//         changeColor('#2f4858');
+//         changeTextColor('white')
+//     } else {
+//         (changeColor('white'));
+//         (changeTextColor('grey'))
+//     }
+//     console.log(`changedColor: ${color}`)
+// }
+
+// console.log(color);
+
+// clickEvents() {
+//     divColors();
+//     props.tested;
+// }
+
+
+// ? Hooks to set state of the class (which results in changing a class's name)
+const [currentClass, changeClass] = useState('searchDivs');
+const [selectedDivArray, changeDivs] = useState([]);
+
+const [languageArray, pushArray] = useState([]);
+
+
+
+
+// ? Array List of languages
+function languageList () {
+    for (const [key, value] of Object.entries(countryLanguages)) {
+      // let newArray = key;
+  
+      if (languageArray.length < 185) {
+        pushArray(prevState => [...prevState, value.name]);
+      } 
+      // console.log(`Language: ${value.name}`);
+  
+      // console.log(countryData[key].languages);
+      // console.log(newArray);
+    }
+    
+  }
+  
+//   let languageLists = languageArray;
+  
+//   console.log(languageArray);
+//   console.log(`Language List: ${languageLists}`);
+
+  // console.log(`Language Chosen: ${languageArray[184]}`);
+  // console.log(`Array Length ${languageArray.length}`);
+  // languageList();
+  
+  
+  
+  // ? Converting Array Language list into li/list items
+
+
+
+
+
+
+// ? Puts selected divs into an array 
+function divArray () {
+    changeDivs()
+}
+
+
+
+
+// ? Function to change background and color of a selected Divs (onClick)
+function selectedDivs () {
+    // if (currentClass === 'searchDivs') {
+    //     changeClass('selectedDivs')
+    // } else {changeClass('searchDivs')}
+    console.log(`Current Class: ${currentClass}`);
+
+}
+
+
+
+
     return (
         <div id="searchBox">
             <header>
@@ -20,10 +122,13 @@ function SearchBox (props) {
             <button id="clearButton" onClick={props.clear}>Clear Map</button>
 
 
-            <div className="searchDivs" onClick={props.tested}><FaGlobeAmericas className="iconics"/>  English</div>
+            {/* <div className={currentClass} onClick={() => {props.tested(); selectedDivs();}} ><FaGlobeAmericas className="iconics"/>  English</div>
+
             <div className="searchDivs"><FaGlobeAmericas className="iconics"/>  Spanish</div>
+
             <div className="searchDivs" onClick={props.frenches}><FaGlobeEurope className="iconics"/>  French</div>
-            <div className="searchDivs"><FaGlobeEurope className="iconics"/>  Polish</div>
+
+            <div className="searchDivs" onClick={() => {console.log('polish')}}><FaGlobeEurope className="iconics"/>  Polish</div>
             <div className="searchDivs"><FaGlobeAsia className="iconics"/>  Japanese</div>
             <div className="searchDivs"><FaGlobeAsia className="iconics"/>  Mandarin Chinese</div>
             <div className="searchDivs"><FaGlobeAsia className="iconics"/>  Hindu</div>
@@ -46,11 +151,40 @@ function SearchBox (props) {
             <div className="searchDivs"><FaGlobeAsia className="iconics"/>  Iranian Persian (Farsi)</div>
             <div className="searchDivs"><FaGlobeAsia className="iconics"/>  Thai</div>
             <div className="searchDivs"><FaGlobeEurope className="iconics"/>  Ukrainian</div>
-            <div className="searchDivs"><FaGlobeAsia className="iconics"/>  Burmese</div>
+            <div className="searchDivs"><FaGlobeAsia className="iconics"/>  Burmese</div> */}
+
+
+        <div>
+            <button onClick={languageList} id="refreshButton">Refresh List</button>
+
+            
+                {languageArray.map(item => {
+                    return <div className="searchDivs">{item}</div>
+                })}
+            
+        </div>
         </div>
     )
 }
 
+
+
+
+// style={{background: color, color: textColor}} onClick={() => {props.tested(); divColors();}}
+// style={{background: color, color: textColor}} onClick={() => {props.frenches(); divColors();}}
+
+
+
+{/* <ul>
+{
+    for (const [key, value] of Object.entries(countryLanguages)) {
+
+           if (languageArray.length < 185) {
+           return (<li>{value.name}</li>)} 
+           }
+    }
+
+</ul> */}
 
 export default SearchBox;
 

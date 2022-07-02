@@ -3,7 +3,7 @@
 import './styles/map.css';
 import './App.css';
 import Maps from './components/map';
-import { DataPres } from './components/mapInfo';
+// import { DataPres } from './components/mapInfo';
 import WorldmapApp from './components/worldmap';
 import SearchBox from './components/searchLayout';
 // import { dataPres } from './components/mapInfo';
