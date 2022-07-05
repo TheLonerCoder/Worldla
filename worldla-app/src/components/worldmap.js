@@ -1,14 +1,18 @@
 // import './App.css';
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import Worldmap from 'react-svg-worldmap';
 // import './styles/map.css'
 import countryLanguages from '../data/languages';
 import { countryData } from '../data/countries';
 import SearchBox from './searchLayout';
+import InfoComponent from './languageInfo';
 
 function WorldmapApp() {
   
   const [country, pushCountry] = useState([]);  
+
+  // const [country, pushCountry] = useContext([]);
+
 
   const countryLang = () => {
 
@@ -70,6 +74,30 @@ function french () {
   }
 }
 
+
+
+
+
+
+
+
+function testingArray () {
+  for (const [key, value] of Object.entries(countryData)) {
+    // let newArray = key;
+
+    if (countryData[key].languages.includes('en')) {
+      pushCountry(prevState => [...prevState, {country: key, value:100}])
+      
+
+      console.log(key) ;
+    } 
+
+
+    // console.log(countryData[key].languages);
+    // console.log(newArray);
+  }
+}
+
 // function tested () {
 //   for (const [key, value] of Object.entries(testObj)) {
 //       pushCountry(prevState => [...prevState, {country: value.country, value: 100000}])
@@ -107,10 +135,11 @@ function clearMap () {
             // onClickFunction={clickAction}
             // frame
 
+
           />
 
 
-          <SearchBox id="grid2" tested={testing} clear={clearMap} frenches={french} />
+          <SearchBox id="grid2" tested={testing} clear={clearMap} frenches={french} testingArray={testingArray}/>
 
           <div className="langBox">
                

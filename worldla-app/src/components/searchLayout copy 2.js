@@ -70,11 +70,8 @@ function languageList () {
 }
 
 
-
-// ? Array of objects with an ID and the language name
-
-let languageId = languageArray.map(items => {
-                    return {id:`num${languageArray.indexOf(items)}`, Language: items}
+languageArray.map(item => {
+                    console.log({id:`num${languageArray.indexOf(item)}`, Language: item})
                 })
 
 
@@ -139,7 +136,7 @@ function clearLanguages () {
 
         </div>
 
-            <InfoComponent selectedLanguages={divArray} languageAndId = {languageId}/>
+            <InfoComponent selectedLanguages={divArray}/>
 
         </div>
     )
