@@ -9,7 +9,7 @@ import InfoComponent from "./languageInfo";
 
 
 
-
+// * props = country, pushCountry, clear, etc
 function SearchBox (props) {
 
 
@@ -83,8 +83,36 @@ let languageId = languageArray.map(items => {
 function clickEvent(e) {
     changeDivs(() => [...selectedDivArray, e.target.id]);
     // changeDivs(prevState => [...prevState, e.target.id]);
-
+    
     e.target.className = 'selectedDivs';
+
+
+    // function newerTest () {
+    //     newTest();
+    // };
+
+    // newTest();
+
+    // if (props.country.length === 0) {
+    //     newTest();
+    // }
+
+    // if (props.country.length === 0) {
+    //     console.log(props.country);
+    // }
+
+// let testing = (function() {
+//     let excuted = false;
+//     return function() {
+//         if (!excuted) {
+//             excuted = true
+//         }
+//     }
+// })();
+
+// testing();
+// testing();
+    
 }
 
 let divArray = selectedDivArray;
@@ -109,10 +137,84 @@ function clearLanguages () {
 
 
 
+// ? Translate id to country
 
+let arrayLanguages = [];
+
+
+function newTest () {
+
+
+    for (const [index, element] of (languageId).entries()) {
+
+
+if (divArray.includes(element.id)) {
+    arrayLanguages.push(element.Language);
+}
+}
+
+// console.log(arrayLanguages);
+
+
+    for (const [keys, values] of Object.entries(countryLanguages)) {
+        // console.log(keys, values);
+
+        for (let x = 0; x < arrayLanguages.length; x++) {
+            // if (values.name === divArray[x]) {
+            //     console.log(keys)
+            // }
+            if (values.name === arrayLanguages[x]) {
+                // console.log(keys)
+
+                
+
+
+                for (const [key, value] of Object.entries(countryData)) {
+
+                    // console.log(value.languages)
+
+                    if (value.languages.includes(keys)) {
+                        // props.pushCountry(prevState => [...prevState, {country: key, value:100}])
+                        // console.log(key);
+                        // console.log(key)
+                        props.pushCountry(pastKeys => [...pastKeys, {country: key, value:100}])
+                    }
+
+
+
+                }
+
+
+
+
+
+
+                // props.pushCountry(prevState => [...prevState, {country: keys, value:100}])
+            }
+        }
+    }
+
+// console.log(divArray);
+
+
+}
+
+
+
+    function newerTest () {
+        // newTest();
+        console.log('test')
+    };
+
+
+
+
+// console.log(props.country);
+// TODO change search and div onClicks, etc
 
     return (
         <div>
+        {/* <button onClick={newTest}>test</button> */}
         <div id="searchBox">
             <header>
                 <h1 className="map"><FaGlobeAmericas className="icons"/>Worldla</h1>
@@ -122,7 +224,7 @@ function clearLanguages () {
             </header>
 
             <input type="search" id="langSearch" name="language" placeholder="search a language"/>
-            <button id="searchButton">Search</button> 
+            <button id="searchButton" onClick={(e) => {newTest(e); newerTest();}}>Search</button> 
             <button id="clearButton" onClick={() => {props.clear(); clearLanguages();}}>Clear Map</button>
 
 
@@ -132,7 +234,7 @@ function clearLanguages () {
 
             
                 {languageArray.map(item => {
-                    return <div className="searchDivs" id={`num${languageArray.indexOf(item)}`} onClick={clickEvent}>{item}</div>
+                    return <div className="searchDivs" id={`num${languageArray.indexOf(item)}`} onClick={(e) => {newTest(e); clickEvent(e);}}>{item}</div>
                 })}
             
         </div>
