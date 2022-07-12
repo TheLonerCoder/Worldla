@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import countryLanguages from "../data/languages";
 import { countryData } from "../data/countries";
 import SearchBox from "./searchLayout";
+import '../styles/style.css';
 
 
 function InfoComponent (props) {
@@ -54,7 +55,7 @@ idToLanguage();
 
 
     return (
-        <div>
+        <div id="infoComponent">
             <h2>
                 {/* Selected Languages: {props.selectedLanguages} */}
                 {/* Selected Languages: {ArrayTest} */}

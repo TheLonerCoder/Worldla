@@ -6,6 +6,9 @@ import countryLanguages from '../data/languages';
 import { countryData } from '../data/countries';
 import SearchBox from './searchLayout';
 import InfoComponent from './languageInfo';
+import '../styles/style.css';
+import InstructionsBox from './instructions';
+
 
 function WorldmapApp() {
   
@@ -120,11 +123,17 @@ function clearMap () {
 
 
 
+
+
+
+
+
   return (
-    <div className="App">
+    <div className="AppBody">
 
         {/* <button onClick={languageList}>Debug</button> */}
 
+        <InstructionsBox id="lay1"/>
 
           <Worldmap 
             color="lightgreen"
@@ -135,11 +144,13 @@ function clearMap () {
             // onClickFunction={clickAction}
             // frame
 
+            id="lay2"
 
           />
 
+{/* id="grid2" */}
 
-          <SearchBox id="grid2" tested={testing} clear={clearMap} frenches={french} testingArray={testingArray} country={country}  pushCountry={pushCountry}/>
+          <SearchBox id="lay3" tested={testing} clear={clearMap} frenches={french} testingArray={testingArray} country={country}  pushCountry={pushCountry} />
 
           <div className="langBox">
                

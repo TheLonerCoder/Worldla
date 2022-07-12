@@ -5,6 +5,7 @@ import '../styles/style.css';
 import { FaGlobeAmericas, FaGlobeAsia, FaGlobeAfrica, FaGlobeEurope } from 'react-icons/fa'
 import WorldmapApp from "./worldmap";
 import InfoComponent from "./languageInfo";
+import InstructionsBox from "./instructions";
 
 
 
@@ -213,7 +214,7 @@ if (divArray.includes(element.id)) {
 // TODO change search and div onClicks, etc
 
     return (
-        <div>
+        <div className="searchContainer">
         {/* <button onClick={newTest}>test</button> */}
         <div id="searchBox">
             <header>
@@ -239,7 +240,12 @@ if (divArray.includes(element.id)) {
             
         </div>
 
+        
+
+
+
         </div>
+
 
             <InfoComponent selectedLanguages={divArray} languageAndId = {languageId}/>
 
