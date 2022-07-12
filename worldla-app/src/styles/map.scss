@@ -18,11 +18,11 @@
 svg {
 
     // border: #f6edd9 solid 10px;
+    // width: 100%;
 
-
-    position: absolutes;
-    top: 10px;
-    left: 10px;
+    // position: absolute;
+    // top: 10px;
+    // left: 10px;
     // overflow: scroll;
 
         &:hover {
@@ -37,12 +37,48 @@ svg {
     // border: #f6edd9 solid 10px;
     border: $bluegreen solid 6px;
     border-radius: 8px;
+
     width: 640px;
 
-
+    
+    // width: 100px;
+    
+    
     
 }
 
+
+// ? SVG Reference
+//^ height: 480px, width: 640px
+//^ height: 360px, width: 480px
+//^ height: 252px, width: 336px
+//^ height: 180px, width: 240px
+
+
+@media (max-width: 1246px) {
+
+    .worldmap__figure-container {
+        // border: #f6edd9 solid 10px;
+        border: $bluegreen solid 6px;
+        border-radius: 8px;
+    
+        // width: 50vh;
+        height: 360px;
+        width: 480px;
+    
+        
+        // width: 100px;
+        
+        
+        svg {
+           height: 360px !important;
+           width: 480px !important;
+        }
+        
+    }   
+
+
+}
 // .map {
 //     // border: burlywood solid 10px;
 
@@ -65,23 +101,23 @@ h1 {
 }
 
 
-#Appbody {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px; 
+// #Appbody {
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     grid-template-rows: 1fr;
+//     grid-column-gap: 0px;
+//     grid-row-gap: 0px; 
 
-}
+// }
 
-#grid1 {
-    grid-area: 1 / 1 / 2 / 2; 
-}
+// #grid1 {
+//     grid-area: 1 / 1 / 2 / 2; 
+// }
 
 
-#grid2 {
-    grid-area: 1 / 2 / 2 / 3;
-}
+// #grid2 {
+//     grid-area: 1 / 2 / 2 / 3;
+// }
 
 // .langBox {
 //     background-color: red;

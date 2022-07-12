@@ -217,6 +217,7 @@ if (divArray.includes(element.id)) {
         <div className="searchContainer">
         {/* <button onClick={newTest}>test</button> */}
         <div id="searchBox">
+        <div className="worldaSearch">
             <header>
                 <h1 className="map"><FaGlobeAmericas className="icons"/>Worldla</h1>
                 {/* <p id="langHead">Language Search</p> */}
@@ -227,7 +228,7 @@ if (divArray.includes(element.id)) {
             <input type="search" id="langSearch" name="language" placeholder="search a language"/>
             <button id="searchButton" onClick={(e) => {newTest(e); newerTest();}}>Search</button> 
             <button id="clearButton" onClick={() => {props.clear(); clearLanguages();}}>Clear Map</button>
-
+        </div>
 
 
         <div>

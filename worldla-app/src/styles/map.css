@@ -1,10 +1,4 @@
 @import url(c:\Users\Stephon\Documents\GitHub\Worldla\worldla-app\src\styles\Variables\fonts.css);
-svg {
-  position: absolutes;
-  top: 10px;
-  left: 10px;
-}
-
 svg:hover {
   cursor: -webkit-zoom-in;
   cursor: zoom-in;
@@ -16,6 +10,19 @@ svg:hover {
   width: 640px;
 }
 
+@media (max-width: 1246px) {
+  .worldmap__figure-container {
+    border: #00857b solid 6px;
+    border-radius: 8px;
+    height: 360px;
+    width: 480px;
+  }
+  .worldmap__figure-container svg {
+    height: 360px !important;
+    width: 480px !important;
+  }
+}
+
 h1 {
   font-family: 'Fredoka One', cursive;
   letter-spacing: .1rem;
@@ -24,32 +31,5 @@ h1 {
   color: white;
   padding-bottom: 15px;
   padding-top: 10px;
-}
-
-#Appbody {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-
-#grid1 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-area: 1 / 1 / 2 / 2;
-}
-
-#grid2 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-area: 1 / 2 / 2 / 3;
 }
 /*# sourceMappingURL=map.css.map */
