@@ -5,14 +5,14 @@ svg:hover {
 }
 
 .worldmap__figure-container {
-  border: #00857b solid 6px;
+  border: #00857b solid 4px;
   border-radius: 8px;
   width: 640px;
 }
 
 @media (max-width: 1246px) {
   .worldmap__figure-container {
-    border: #00857b solid 6px;
+    border: #00857b solid 4px;
     border-radius: 8px;
     height: 360px;
     width: 480px;

@@ -217,8 +217,8 @@ if (divArray.includes(element.id)) {
         <div className="searchContainer">
         {/* <button onClick={newTest}>test</button> */}
         <div id="searchBox">
-        <div className="worldaSearch">
-            <header>
+        <div className="worldlaSearch">
+            <header id="worldlaHead">
                 <h1 className="map"><FaGlobeAmericas className="icons"/>Worldla</h1>
                 {/* <p id="langHead">Language Search</p> */}
                 
