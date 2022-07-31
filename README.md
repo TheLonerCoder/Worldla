@@ -5,7 +5,7 @@
 
 Worlda is a platform where you can become more aware of how learning a language opens up doors. It'll give resources to learn languages, show you where you can use them, etc.
 
-#### [White Paper]()
+#### [White Paper](https://github.com/TheLonerCoder/Worldla/blob/main/worldla-app/Language_Map.pdf)
 <br />
 
 ### Preview/How it works:
