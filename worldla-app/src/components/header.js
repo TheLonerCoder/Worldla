@@ -11,6 +11,7 @@ import Home from './home';
 import { ImHome, ImMap, ImAirplane, ImSearch } from "react-icons/im";
 import { GiWorld, GiBookshelf } from "react-icons/gi";
 import { BsQuestionCircleFill } from "react-icons/bs";
+import WorldmapApp from './worldmap';
 
 
 
@@ -28,13 +29,14 @@ function WorldlaHeaderOG() {
 }
 
 
-// TODO Footer
 
+
+// TODO Footer
 
 function WorldlaHeader() {
   return (
     <Router>
-      <nav>
+      <nav className="backgroundGrad">
         <h1 className="logoHeader"><GiWorld/> Worldla</h1>
         <Link to='/'><ImHome/> Home</Link>
         <Link to='/app'><ImMap/> Map</Link>
@@ -44,7 +46,7 @@ function WorldlaHeader() {
 
       <Routes>
         <Route path='/' element={<Home />}/>
-        <Route path='/app'/>
+        <Route path='/app' element={<WorldmapApp/> }/>
         <Route path='/resources'/>
         <Route path='/about'/>
         {/* Redirect back to home */}

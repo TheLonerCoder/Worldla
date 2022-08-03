@@ -151,7 +151,7 @@ function clearMap () {
 
         <SearchBox id="lay3" tested={testing} clear={clearMap} frenches={french} testingArray={testingArray} country={country}  pushCountry={pushCountry} />
 
-        <InstructionsBox id="lay1"/>
+        {/* <InstructionsBox id="lay1"/> */}
         
           <div className="langBox">
                

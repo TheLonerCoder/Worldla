@@ -5,5 +5,45 @@
 
 
 .logoHeader {
-    color: black;
+    color: white;
+    display: inline-block; 
+    position: relative;
+    // left: 5px;
+    top: 10px;
+    // text-align: right;
 }
+
+
+
+
+.backgroundGrad {
+    height: 5vh;
+    min-height: 40px;
+    background: linear-gradient(60deg, #00a849 40%, #009869 60%, #00857b);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    
+    
+
+    
+    a {
+        color: white;
+        list-style: none;
+        text-decoration: none;
+        margin-right: 15px;
+        font-family: $font3;
+
+            &:hover {
+                color: $navyblue;
+                
+            }
+    }
+
+}
+
+
+
+
+

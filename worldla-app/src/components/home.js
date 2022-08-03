@@ -1,8 +1,15 @@
-import React from 'react'
+import React from 'react';
+import InstructionsBox from './instructions';
+
+
+
+
 
 function Home() {
   return (
-    <div>Home</div>
+    <div>
+     <InstructionsBox />
+    </div>
   )
 }
 
