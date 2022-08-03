@@ -12,6 +12,7 @@ import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 
 
+
 function App() {
   return (
     <div className="App">
@@ -26,8 +27,10 @@ function App() {
 
 
 
-      <div id='Appbody'>
+      {/* <div id='Appbody'>
         <WorldmapApp id="grid1"/>
+      </div> */}
+
         
         {/* {countryEntered} */}
         {/* <DataPres /> */}
@@ -41,7 +44,6 @@ function App() {
       {/* <img src="BlankMap-World.svg" alt="map2" /> */}
       
         {/* <SearchBox id="grid2"/> */}
-      </div>
     </div>
   );
 }

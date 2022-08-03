@@ -3,7 +3,8 @@ import countryLanguages from "../data/languages";
 import { countryData } from "../data/countries";
 import SearchBox from "./searchLayout";
 import '../styles/style.css';
-
+import { ImHome, ImMap, ImAirplane } from "react-icons/im";
+import { GiWorld } from "react-icons/gi";
 
 function InfoComponent (props) {
 
