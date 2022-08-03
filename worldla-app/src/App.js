@@ -7,16 +7,24 @@ import Maps from './components/map';
 import WorldmapApp from './components/worldmap';
 import SearchBox from './components/searchLayout';
 // import { dataPres } from './components/mapInfo';
+import WorldlaHeader from './components/header';
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 
 
 function App() {
   return (
     <div className="App">
 
+
+      
       {/* <img src={map} alt="world-map" /> */}
       {/* <div className="map">
         <h1>Worldla</h1>
       </div> */}
+      <WorldlaHeader />
+
+
 
       <div id='Appbody'>
         <WorldmapApp id="grid1"/>

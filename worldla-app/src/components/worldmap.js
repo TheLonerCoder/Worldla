@@ -133,9 +133,8 @@ function clearMap () {
 
         {/* <button onClick={languageList}>Debug</button> */}
 
-        <InstructionsBox id="lay1"/>
 
-          <Worldmap 
+        <Worldmap 
             color="lightgreen"
             value-suffix="languages"
             size="xl"
@@ -150,8 +149,10 @@ function clearMap () {
 
 {/* id="grid2" */}
 
-          <SearchBox id="lay3" tested={testing} clear={clearMap} frenches={french} testingArray={testingArray} country={country}  pushCountry={pushCountry} />
+        <SearchBox id="lay3" tested={testing} clear={clearMap} frenches={french} testingArray={testingArray} country={country}  pushCountry={pushCountry} />
 
+        <InstructionsBox id="lay1"/>
+        
           <div className="langBox">
                
               {/* <input type="text" id='textBox'/> */}

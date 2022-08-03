@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAMA,AAAA,WAAW,CAAC;EACR,KAAK,EAAE,KAAK;CACf",
+    "sources": [
+        "header.scss",
+        "colors.scss",
+        "Variables/fonts.scss"
+    ],
+    "names": [],
+    "file": "header.css"
+}
