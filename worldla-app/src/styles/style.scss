@@ -65,7 +65,7 @@ body {
     padding: 0 5%;
     // width: 200%;
     margin: auto;
-    padding: 0 100px;
+    // padding: 0 100px;
 
     display: flex;
     flex-direction: column;
@@ -79,11 +79,11 @@ body {
 
 
 
-    .worldmap__figure-container {
-        // grid-area: 2 / 1 / 4 / 2;
-        // visibility: hidden;
-        // width: 90%;
-    }
+    // .worldmap__figure-container {
+    //     // grid-area: 2 / 1 / 4 / 2;
+    //     // visibility: hidden;
+    //     // width: 90%;
+    // }
 
     .searchContainer {
         // grid-area: 2 / 2 / 3 / 3;
@@ -308,6 +308,48 @@ button {
     position: sticky;
     top: 0px;
 }
+
+
+.worldlaSearchBox {
+    height: 50px;
+    width: 50vw;
+    max-width: 700px;
+    background: linear-gradient(60deg, #00a849 40%, #009869 60%, #00857b);    border: solid 2px rgba($color: white, $alpha: 0.8);
+    border-radius: 5px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+
+
+    svg {
+        // margin-right: 10px;
+        fill: white;
+        display: inline;
+        // margin: auto 0;
+        // position: relative;
+        // top: -1px;
+        
+    }
+
+    #langSearchBar {
+        margin-bottom: 10px;
+        // border: solid $navyblue 2px;
+        margin-right: 5px;
+        // border-radius: 10px;
+        width: 200px;
+    }
+
+
+    input {
+        border: none;
+        outline: none;
+        background-color: rgba($color: #000000, $alpha: 0);
+        color: white;
+        font-size: 20px;
+    }
+}
+
+
 
 
 

@@ -6,6 +6,38 @@ import { FaGlobeAmericas, FaGlobeAsia, FaGlobeAfrica, FaGlobeEurope } from 'reac
 import WorldmapApp from "./worldmap";
 import InfoComponent from "./languageInfo";
 import InstructionsBox from "./instructions";
+import { ImHome, ImMap, ImAirplane, ImSearch } from "react-icons/im";
+
+
+
+function SearchBar (props) {
+
+    const [value, updateValue] = useState('');
+
+    const onChange = (event) => {
+        updateValue(event.target.value)
+    }
+
+
+    const onSearch = (searchTerm) => {
+        // return (searchTerm)
+        console.log(`search ${searchTerm}`)
+    }
+
+    return (
+        <div className="worldlaSearchBox">
+
+                <ImSearch />
+                <input type="text" id="langSearchBar" name="language" placeholder="search a language" size={40} value={value} onChange={onChange}/>
+                <button onClick={() => onSearch(value)}>Search</button>
+
+                 <h1>{onSearch}</h1>
+                {/* <textarea name="" id="noteTitle" cols="10" rows="1" maxLength="20" placeholder="Search a language"></textarea> */}
+                {/* <button id="searchButton" onClick={(e) => {newTest(e); newerTest();}}>Search</button> 
+                <button id="clearButton" onClick={() => {props.clear(); clearLanguages();}}>Clear Map</button> */}
+        </div>
+    )
+}
 
 
 
@@ -230,7 +262,6 @@ if (divArray.includes(element.id)) {
             <button id="clearButton" onClick={() => {props.clear(); clearLanguages();}}>Clear Map</button>
         </div>
 
-
         <div>
             <button onClick={languageList} id="refreshButton">Refresh List</button>
 
@@ -257,7 +288,7 @@ if (divArray.includes(element.id)) {
 
 
 
-export default SearchBox;
+export  {SearchBox, SearchBar};
 
 
 

@@ -11,6 +11,7 @@ import Home from './home';
 import { ImHome, ImMap, ImAirplane, ImSearch } from "react-icons/im";
 import { GiWorld, GiBookshelf } from "react-icons/gi";
 import { BsQuestionCircleFill } from "react-icons/bs";
+import { FaGlobeAmericas, FaGlobeAsia, FaGlobeAfrica, FaGlobeEurope } from 'react-icons/fa'
 import WorldmapApp from './worldmap';
 
 
@@ -37,7 +38,7 @@ function WorldlaHeader() {
   return (
     <Router>
       <nav className="backgroundGrad">
-        <h1 className="logoHeader"><GiWorld/> Worldla</h1>
+        <h1 className="logoHeader"><FaGlobeAmericas/> Worldla</h1>
         <Link to='/'><ImHome/> Home</Link>
         <Link to='/app'><ImMap/> Map</Link>
         <Link to='/resources'><GiBookshelf/> Resources</Link>

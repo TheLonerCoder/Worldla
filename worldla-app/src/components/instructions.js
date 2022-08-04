@@ -20,7 +20,7 @@ function InstructionsBox () {
     return (
         <div className="instructionsBox">
             
-            <h1>How to use</h1>
+            <h1 id="howto">How to use</h1>
             <ul id="howToUse">
                 <li id="how1">
                     <h4>1. Load the list of languages by clicking <br /> <button id="refreshButton">Refresh List</button></h4>

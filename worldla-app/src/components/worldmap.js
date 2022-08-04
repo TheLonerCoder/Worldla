@@ -4,7 +4,7 @@ import Worldmap from 'react-svg-worldmap';
 // import './styles/map.css'
 import countryLanguages from '../data/languages';
 import { countryData } from '../data/countries';
-import SearchBox from './searchLayout';
+import{ SearchBox, SearchBar }from './searchLayout';
 import InfoComponent from './languageInfo';
 import '../styles/style.css';
 import InstructionsBox from './instructions';
@@ -133,6 +133,7 @@ function clearMap () {
 
         {/* <button onClick={languageList}>Debug</button> */}
 
+        {/* <SearchBar/> */}
 
         <Worldmap 
             color="lightgreen"
