@@ -18,6 +18,15 @@
     // background-color: rgba($color: linear-gradient(60deg, #00a849 40%, #009869 60%, #00857b), $alpha: 0);
     background-color: rgba($color: $lightgreen, $alpha: 0.5);
     border-radius: 10px;
+    width: 50%;
+    min-width: 200px;
+    height: 25px;
+    text-align: right;
+    text-transform: capitalize;
+    padding-right: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     // text-transform: uppercase;
 }
 

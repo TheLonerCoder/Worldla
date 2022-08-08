@@ -1,7 +1,7 @@
 import React from "react";
 import '../styles/instruction.css';
 import styled, { keyframes } from 'styled-components';
-import { flipInX, slideInLeft } from 'react-animations'
+import { flipInX, slideInLeft, zoomIn } from 'react-animations'
 // import Popup from 'reactjs-popup';
 // import 'reactjs-popup/dist/index.css';
 // import '../styles/style.css';
@@ -14,6 +14,24 @@ import { flipInX, slideInLeft } from 'react-animations'
 //       <span> Modal content </span>
 //     </Popup>
 //   );
+
+// ? Styles
+const StartButton = styled.a `
+    list-style: none;
+    background-color: rgb(0, 168, 73);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+
+    &: hover {
+        background-color: rgba(0, 168, 73, 0.7);
+        cursor: pointer;
+    }
+`
+
+
 
 // ? Animations
 const cardAnimation = keyframes`${flipInX}`;
@@ -28,6 +46,8 @@ const pageAnimation = keyframes`${slideInLeft}`;
 const PageDiv = styled.div`
   animation: 1s ${pageAnimation};
 `;
+
+
 // const cardAnimation = keyframes`${flipInX}`;
 
 // const CardDiv = styled.li`
@@ -66,6 +86,9 @@ function InstructionsBox () {
                 </li>
                 
             </ul>
+
+{/* 
+            <StartButton>Get Started</StartButton> */}
         </PageDiv>
     )
 }

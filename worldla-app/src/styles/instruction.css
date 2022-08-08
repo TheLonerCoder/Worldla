@@ -5,6 +5,21 @@
 #howto {
   background-color: rgba(0, 168, 73, 0.5);
   border-radius: 10px;
+  width: 50%;
+  min-width: 200px;
+  height: 25px;
+  text-align: right;
+  text-transform: capitalize;
+  padding-right: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 #howToUse {

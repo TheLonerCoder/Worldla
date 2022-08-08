@@ -49,7 +49,7 @@ function WorldlaHeader() {
   return (
     <Router>
       <nav className="backgroundGrad">
-        <h1 className="logoHeader"><FaGlobeAmericas/> Worldla</h1>
+        <h1 className="logoHeader"><FaGlobeAmericas id="test"/> Worldla</h1>
         <Link to='/'><ImHome/> Home</Link>
         <Link to='/app'><ImMap/> Map</Link>
         <Link to='/resources'><GiBookshelf/> Resources</Link>
