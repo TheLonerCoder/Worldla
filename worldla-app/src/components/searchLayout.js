@@ -250,12 +250,6 @@ if (divArray.includes(element.id)) {
         {/* <button onClick={newTest}>test</button> */}
         <div id="searchBox">
         <div className="worldlaSearch">
-            <header id="worldlaHead">
-                <h1 className="map"><FaGlobeAmericas className="icons"/>Worldla</h1>
-                {/* <p id="langHead">Language Search</p> */}
-                
-                {/* <label for="langSearch" id="searchText">Search for a language:</label><br /> */}
-            </header>
 
             <input type="search" id="langSearch" name="language" placeholder="search a language"/>
             <button id="searchButton" onClick={(e) => {newTest(e); newerTest();}}>Search</button> 
@@ -269,6 +263,10 @@ if (divArray.includes(element.id)) {
                 {languageArray.map(item => {
                     return <div className="searchDivs" id={`num${languageArray.indexOf(item)}`} onClick={(e) => {newTest(e); clickEvent(e);}}>{item}</div>
                 })}
+                {/* {languageArray.map(item => {
+                    return <div className="searchDivs" id={`num${languageArray.indexOf(item)}`} onDoubleClick={clickEvent}
+                    onClick={newTest}>{item}</div>
+                })} */}
             
         </div>
 

@@ -13,6 +13,17 @@ import { GiWorld, GiBookshelf } from "react-icons/gi";
 import { BsQuestionCircleFill } from "react-icons/bs";
 import { FaGlobeAmericas, FaGlobeAsia, FaGlobeAfrica, FaGlobeEurope } from 'react-icons/fa'
 import WorldmapApp from './worldmap';
+// import styled, { keyframes } from 'styled-components';
+// import { flipInX, slideInRight } from 'react-animations';
+
+
+// // ? Animations
+// const pageAnimation = keyframes`${slideInRight}`;
+
+// const pageDiv = styled.li`
+//   animation: 1s ${pageAnimation};
+// `;
+
 
 
 
@@ -42,14 +53,14 @@ function WorldlaHeader() {
         <Link to='/'><ImHome/> Home</Link>
         <Link to='/app'><ImMap/> Map</Link>
         <Link to='/resources'><GiBookshelf/> Resources</Link>
-        <Link to='/about'><BsQuestionCircleFill/> About</Link>
+        {/* <Link to='/about'><BsQuestionCircleFill/> About</Link> */}
       </nav>
 
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/app' element={<WorldmapApp/> }/>
         <Route path='/resources'/>
-        <Route path='/about'/>
+        {/* <Route path='/about'/> */}
         {/* Redirect back to home */}
         <Route path='*' element={<Navigate to='/'/> }/>
       </Routes>

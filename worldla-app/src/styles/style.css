@@ -1,6 +1,5 @@
 body {
   background-color: white;
-  width: 100vw;
   overflow: auto;
 }
 
@@ -43,7 +42,7 @@ body {
 
 #searchBox {
   width: 400px;
-  border: #00857b 2px solid;
+  border: #00857b 4px solid;
   border-radius: 10px;
   margin-bottom: 10px;
   margin-left: 20px;
@@ -200,5 +199,9 @@ button {
   background-color: rgba(0, 0, 0, 0);
   color: white;
   font-size: 20px;
+}
+
+.worldlaSearch {
+  margin-top: 10px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -9,7 +9,7 @@
 body {
     background-color: white;
     // background-color: ;
-    width: 100vw;
+    // width: 100vw;
     overflow: auto;
 
 }
@@ -153,7 +153,7 @@ body {
 
 #searchBox {
     width: 400px;
-    border: $bluegreen 2px solid;
+    border: $bluegreen 4px solid;
     border-radius: 10px;
     margin-bottom: 10px;
     margin-left: 20px;
@@ -347,6 +347,12 @@ button {
         color: white;
         font-size: 20px;
     }
+}
+
+
+
+.worldlaSearch {
+    margin-top: 10px;
 }
 
 

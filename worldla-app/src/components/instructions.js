@@ -1,5 +1,7 @@
 import React from "react";
 import '../styles/instruction.css';
+import styled, { keyframes } from 'styled-components';
+import { flipInX, slideInLeft } from 'react-animations'
 // import Popup from 'reactjs-popup';
 // import 'reactjs-popup/dist/index.css';
 // import '../styles/style.css';
@@ -13,18 +15,39 @@ import '../styles/instruction.css';
 //     </Popup>
 //   );
 
+// ? Animations
+const cardAnimation = keyframes`${flipInX}`;
+
+const CardDiv = styled.li`
+  animation: 1s ${cardAnimation};
+`;
+
+
+const pageAnimation = keyframes`${slideInLeft}`;
+
+const PageDiv = styled.div`
+  animation: 1s ${pageAnimation};
+`;
+// const cardAnimation = keyframes`${flipInX}`;
+
+// const CardDiv = styled.li`
+//   animation: 1s ${cardAnimation};
+// `;
+
 
 
 
 function InstructionsBox () {
     return (
-        <div className="instructionsBox">
+        <PageDiv className="instructionsBox">
             
             <h1 id="howto">How to use</h1>
             <ul id="howToUse">
                 <li id="how1">
+                
                     <h4>1. Load the list of languages by clicking <br /> <button id="refreshButton">Refresh List</button></h4>
                     <img src="imgs/how1.gif" alt="how1" />
+                
                 </li>
 
                 <li id="how2">
@@ -43,7 +66,7 @@ function InstructionsBox () {
                 </li>
                 
             </ul>
-        </div>
+        </PageDiv>
     )
 }
 

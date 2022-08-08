@@ -23,16 +23,10 @@
 }
 
 #howToUse > li {
-  -webkit-box-shadow: 5px 3px 10px black;
-          box-shadow: 5px 3px 10px black;
+  -webkit-box-shadow: 3px 3px 10px black;
+          box-shadow: 3px 3px 10px black;
   margin-right: 20px;
   height: 460px;
-}
-
-#howToUse > li:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  margin: 20px 50px 50px 0px;
 }
 
 #howToUse p, #howToUse h2, #howToUse h3, #howToUse h4 {
@@ -65,6 +59,10 @@
   border: white 3px solid;
 }
 
+#howToUse #how1:hover {
+  background: #007533;
+}
+
 #howToUse #how2 {
   background: linear-gradient(60deg, #00a849 40%, #009869 60%, #00857b);
   border-radius: 10px;
@@ -84,6 +82,10 @@
   width: 300px;
   border-radius: 10px;
   border: white 3px solid;
+}
+
+#howToUse #how2:hover {
+  background: #007533;
 }
 
 #howToUse #how3 {
@@ -106,6 +108,10 @@
   border: white 3px solid;
 }
 
+#howToUse #how3:hover {
+  background: #007533;
+}
+
 #howToUse #how4 {
   background: linear-gradient(60deg, #00a849 40%, #009869 60%, #00857b);
   border-radius: 10px;
@@ -113,5 +119,9 @@
 
 #howToUse #how4 img {
   width: 300px;
+}
+
+#howToUse #how4:hover {
+  background: #007533;
 }
 /*# sourceMappingURL=instruction.css.map */

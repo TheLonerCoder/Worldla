@@ -8,6 +8,18 @@ import{ SearchBox, SearchBar }from './searchLayout';
 import InfoComponent from './languageInfo';
 import '../styles/style.css';
 import InstructionsBox from './instructions';
+import styled, { keyframes } from 'styled-components';
+import { flipInX, slideInRight } from 'react-animations';
+
+
+// ? Animations
+const pageAnimation = keyframes`${slideInRight}`;
+
+const PageDiv = styled.div`
+  animation: 1s ${pageAnimation};
+`;
+
+
 
 
 function WorldmapApp() {
@@ -129,7 +141,7 @@ function clearMap () {
 
 
   return (
-    <div className="AppBody">
+    <PageDiv className="AppBody">
 
         {/* <button onClick={languageList}>Debug</button> */}
 
@@ -178,7 +190,7 @@ function clearMap () {
                 {/* ()=>{ f1(); f2() } */}
 
               
-    </div>
+    </PageDiv>
   );
 }
 

@@ -10,6 +10,8 @@
     position: relative;
     // left: 5px;
     top: 10px;
+    margin-right: auto;
+    margin-left: 2rem;
     // text-align: right;
 }
 
@@ -28,14 +30,16 @@
     align-items: center;
     
     
-    
-
+    &:last-child {
+        margin-right: 2rem;
+    }
     
     a {
         color: white;
         list-style: none;
         text-decoration: none;
-        margin-right: 15px;
+        // margin-right: 15px;
+        margin-right: 2rem;
         font-family: $font3;
 
             &:hover {
