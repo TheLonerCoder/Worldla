@@ -64,7 +64,7 @@ function Home() {
   }
 
   return (
-    <div>
+    <div id='homePage'>
 
     <ZoomDiv style={{marginBottom: '50px', marginTop: '50px'}}>
     <div id="gridbody">

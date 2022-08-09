@@ -1,6 +1,11 @@
-body {
+.App {
   background-color: white;
   overflow: auto;
+  -webkit-box-shadow: inset 0 0 0 100vh rgba(255, 255, 255, 0.8);
+          box-shadow: inset 0 0 0 100vh rgba(255, 255, 255, 0.8);
+  background-image: url("../../public/imgs/worldmap.png");
+  background-size: 100vw;
+  background-repeat: no-repeat;
 }
 
 .AppBody {
