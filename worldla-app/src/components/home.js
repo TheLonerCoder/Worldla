@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import InstructionsBox from './instructions';
 import styled, { keyframes } from 'styled-components';
 import { zoomIn, zoomInDown } from 'react-animations';
+import { ImHome, ImMap, ImAirplane, ImSearch } from "react-icons/im";
+import { GiWorld, GiBookshelf } from "react-icons/gi";
 
 // ? Styles
 const StartButton = styled.a `
@@ -20,6 +22,13 @@ const StartButton = styled.a `
     }
 `
 
+const ImageLayout = styled.img `
+  width: 100%;
+  max-width: 500px;
+  
+
+`
+
 
 // ? Animations
 
@@ -35,6 +44,17 @@ const ZoomDiv = styled.div`
 function Home() {
 
   const [clickedStatus, changeClickStatus] = useState({display: 'none'});
+  const [currentImage, changeImage] = useState('imgs/worldlawhite.jpg')
+
+
+  function changeToBlack () {
+    changeImage('imgs/worldlablack.jpg')
+  }
+
+  function changeToWhite () {
+    changeImage('imgs/worldlawhite.jpg')
+  }
+
 
   function showInstructions (e) {
     changeClickStatus(null);
@@ -46,24 +66,30 @@ function Home() {
   return (
     <div>
 
-    <ZoomDiv style={{marginBottom: '50px'}}>
+    <ZoomDiv style={{marginBottom: '50px', marginTop: '50px'}}>
     <div id="gridbody">
     <div id='grid1'>
-      <h2>What is Worldla?</h2>
+      <h2>What is <span className='logoName'>Worldla</span>?</h2>
       <p>
       Worlda is a platform that helps you become more aware of how learning a language opens up doors for you. It'll give resources to learn languages, show you where you can use them, etc.
       </p>
       
+      <ImageLayout src="imgs/cultural.jpg" alt="" />
     </div>
 
     <div id='grid2'>
-      <h2>Why use Worldla?</h2>
-      <li>test</li>
-      <li>test</li>
-      <li></li>
-      <li></li>
-      <li></li>
+      <h2>Why use <span className='logoName'>Worldla</span>?</h2>
 
+      <ul style={{listStyle: 'none'}}>
+        <li><ImAirplane/> Language Map - Make traveling easier and seeing how practical your language even is, in
+  terms of diminishing returns.</li>
+  {/* <br /> */}
+        <li id='shelf'><GiBookshelf /> Resource Connection - Connects
+  you to other communities to learn a language of interest. </li>
+
+      </ul>
+
+      <ImageLayout src={currentImage} alt='' onMouseOver={changeToBlack} onMouseLeave={changeToWhite}/>
     </div>
 
     </div>
