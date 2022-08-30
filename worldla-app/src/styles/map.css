@@ -5,21 +5,33 @@ svg:hover {
 }
 
 .worldmap__figure-container {
+  border: #f6edd9 solid 10px;
   border: #00857b solid 4px;
   border-radius: 8px;
-  width: 640px;
+  padding-top: 0;
+  margin-top: 0;
+  background-color: black;
 }
 
-@media (max-width: 1246px) {
+@media (max-width: 1726px) {
   .worldmap__figure-container {
-    border: #00857b solid 4px;
-    border-radius: 8px;
-    height: 360px;
-    width: 480px;
+    margin: 0;
   }
-  .worldmap__figure-container svg {
-    height: 360px !important;
-    width: 480px !important;
+  .searchContainer {
+    width: 200px;
+  }
+  .searchContainer #searchBox {
+    width: 200px;
+  }
+  .searchContainer #infoComponent {
+    width: 200px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .worldmap__figure-container {
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 

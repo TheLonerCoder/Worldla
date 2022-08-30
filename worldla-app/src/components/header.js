@@ -52,14 +52,14 @@ function WorldlaHeader() {
         <h1 className="logoHeader"><FaGlobeAmericas id="test"/> Worldla</h1>
         <Link to='/'><ImHome/> Home</Link>
         <Link to='/app'><ImMap/> Map</Link>
-        <Link to='/resources'><GiBookshelf/> Resources</Link>
+        {/* <Link to='/resources'><GiBookshelf/> Resources</Link> */}
         {/* <Link to='/about'><BsQuestionCircleFill/> About</Link> */}
       </nav>
 
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/app' element={<WorldmapApp/> }/>
-        <Route path='/resources'/>
+        {/* <Route path='/resources'/> */}
         {/* <Route path='/about'/> */}
         {/* Redirect back to home */}
         <Route path='*' element={<Navigate to='/'/> }/>

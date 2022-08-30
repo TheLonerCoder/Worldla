@@ -1,6 +1,21 @@
 @import './colors.scss'; //Change to @use
 @import './Variables/fonts.css';
 
+// ? SVG Reference
+//^ height: 480px, width: 640px
+//^ height: 360px, width: 480px
+//^ height: 252px, width: 336px
+//^ height: 180px, width: 240px
+
+$xsmall-height: 180px;
+$xsmall-width: 240px;
+$small-height: 252px;
+$small-width: 336px;
+$medium-height: 360px;
+$medium-width: 480px;
+$large-height: 480px;
+$large-width: 640px;
+$xlarge-width: 1200px;
 // body {
 //     // background: linear-gradient(60deg, $lightgreen 40%, $darkgreen 60%, $bluegreen);
 //     // background-repeat: no-repeat;
@@ -34,11 +49,20 @@ svg {
 
 
 .worldmap__figure-container {
-    // border: #f6edd9 solid 10px;
+    border: #f6edd9 solid 10px;
     border: $bluegreen solid 4px;
     border-radius: 8px;
 
-    width: 640px;
+    padding-top: 0;
+    margin-top: 0;
+
+    // height: auto;
+    // width: 640px;
+    // width: 1200px;
+    // width: 50vw;
+    // height: 50vh; 
+
+    background-color: black;
 
     
     // width: 100px;
@@ -55,30 +79,74 @@ svg {
 //^ height: 180px, width: 240px
 
 
-@media (max-width: 1246px) {
+// @media (max-width: 1246px) {
+@media (max-width: 1726px) {
+    .worldmap__figure-container {
+        margin: 0;
+    }
+
+    .searchContainer {
+        width: 200px;
+        
+        
+        #searchBox {
+            width: 200px;
+        }
+
+        #infoComponent {
+            width: 200px;
+        }
+  }
+}
+
+
+// @media (max-width: 1478px) {
+//     .worldmap__figure-container {
+        
+//     }
+// }
+
+
+
+@media (max-width: 1150px) {
+
 
     .worldmap__figure-container {
         // border: #f6edd9 solid 10px;
-        border: $bluegreen solid 4px;
-        border-radius: 8px;
+        // border: $bluegreen solid 4px;
+        // border-radius: 8px;
     
         // width: 50vh;
-        height: 360px;
-        width: 480px;
+        // height: 360px;
+        // width: 480px;
     
+        margin-right: 0;
+        margin-left: 0;
         
         // width: 100px;
         
         
-        svg {
-           height: 360px !important;
-           width: 480px !important;
-        }
+        // svg {
+        //    height: 360px !important;
+        //    width: 480px !important;
+        // }
         
     }   
 
 
 }
+
+
+
+
+// @media (max-width: 928px) {
+//     .worldmap__figure-container {
+//         svg {
+//             height: $xsmall-height;
+//             width: $xsmall-width;
+//         }
+//     }
+// }
 // .map {
 //     // border: burlywood solid 10px;
 
@@ -123,3 +191,4 @@ h1 {
 //     background-color: red;
     
 // }
+

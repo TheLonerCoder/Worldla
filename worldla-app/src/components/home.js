@@ -4,6 +4,9 @@ import styled, { keyframes } from 'styled-components';
 import { zoomIn, zoomInDown } from 'react-animations';
 import { ImHome, ImMap, ImAirplane, ImSearch } from "react-icons/im";
 import { GiWorld, GiBookshelf } from "react-icons/gi";
+import { Link } from 'react-scroll';
+import { BsChevronCompactDown as DownArrow } from "react-icons/bs";
+// import WorldmapBackground from ''
 
 // ? Styles
 const StartButton = styled.a `
@@ -29,6 +32,11 @@ const ImageLayout = styled.img `
 
 `
 
+// const homePage = {
+//   backgroundImage: 
+// }
+
+
 
 // ? Animations
 
@@ -44,22 +52,27 @@ const ZoomDiv = styled.div`
 function Home() {
 
   const [clickedStatus, changeClickStatus] = useState({display: 'none'});
-  const [currentImage, changeImage] = useState('imgs/worldlawhite.jpg')
+  // const [clickedStatus, changeClickStatus] = useState({visibility: 'collapse'});
+  const [currentImage, changeImage] = useState('Worldla/imgs/worldlawhite.jpg')
+  const [buttonStatus, changeButtonStatus] = useState()
+  const [arrowStatus, changeArrowStatus] = useState({display: 'none'})
 
 
   function changeToBlack () {
-    changeImage('imgs/worldlablack.jpg')
+    changeImage('Worldla/imgs/worldlablack.jpg')
   }
 
   function changeToWhite () {
-    changeImage('imgs/worldlawhite.jpg')
+    changeImage('Worldla/imgs/worldlawhite.jpg')
   }
 
 
   function showInstructions (e) {
     changeClickStatus(null);
 
-    e.target.style.backgroundColor = '#ff0000';
+    // e.target.style.backgroundColor = '#ff0000';
+      e.target.style.display = 'none';
+      changeArrowStatus({display: 'inline'});
 
   }
 
@@ -74,7 +87,7 @@ function Home() {
       Worlda is a platform that helps you become more aware of how learning a language opens up doors for you. It'll give resources to learn languages, show you where you can use them, etc.
       </p>
       
-      <ImageLayout src="imgs/cultural.jpg" alt="" />
+      <ImageLayout src="Worldla/imgs/cultural.jpg" alt="" />
     </div>
 
     <div id='grid2'>
@@ -93,13 +106,21 @@ function Home() {
     </div>
 
     </div>
+      <Link to="instructionsBox" smooth={true} offset={0} duration={100} onClick={showInstructions} id="startButton" style={buttonStatus}>
+          Start
+      </Link>
+      
+      <Link to="instructionsBox" smooth={true} offset={0} duration={250}>
+      <DownArrow style={arrowStatus} size={'2rem'} id='arrowButton'/>
 
-      <StartButton onClick={showInstructions}>Get Started</StartButton>
+      </Link>
+      {/* <StartButton onClick={showInstructions}>Get Started</StartButton> */}
     </ZoomDiv>
 
     <div style={clickedStatus}>
      <InstructionsBox/>
     </div>
+
     </div>
   )
 }

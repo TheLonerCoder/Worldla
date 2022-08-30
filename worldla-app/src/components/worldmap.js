@@ -12,6 +12,7 @@ import styled, { keyframes } from 'styled-components';
 import { flipInX, slideInRight } from 'react-animations';
 
 
+
 // ? Animations
 const pageAnimation = keyframes`${slideInRight}`;
 
@@ -150,7 +151,8 @@ function clearMap () {
         <Worldmap 
             color="lightgreen"
             value-suffix="languages"
-            size="xl"
+            // size="xl"
+            size="xxl"
             data={country}
             richInteraction
             // onClickFunction={clickAction}

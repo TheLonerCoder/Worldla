@@ -23,6 +23,7 @@ function App() {
       {/* <div className="map">
         <h1>Worldla</h1>
       </div> */}
+      
       <WorldlaHeader />
 
 

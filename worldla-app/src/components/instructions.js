@@ -59,25 +59,25 @@ const PageDiv = styled.div`
 
 function InstructionsBox () {
     return (
-        <PageDiv className="instructionsBox">
+        <PageDiv className="instructionsBox" id="instructionsBox">
             
             <h1 id="howto">How to use</h1>
             <ul id="howToUse">
                 <li id="how1">
                 
                     <h4>1. Load the list of languages by clicking <br /> <button id="refreshButton">Refresh List</button></h4>
-                    <img src="imgs/how1.gif" alt="how1" />
+                    <img src="Worldla/imgs/how1.gif" alt="how1" />
                 
                 </li>
 
                 <li id="how2">
                     <h4>2. Double click a language to load it on the map  <button id="refreshButton">Refresh List</button></h4>
-                    <img src="imgs/how2.gif" alt="how2" />
+                    <img src="Worldla/imgs/how2.gif" alt="how2" />
                 </li>
 
                 <li id="how3">
                     <h4>3. Zoom in (and out) of the map by double clicking</h4>
-                    <img src="imgs/how3.gif" alt="how3" />
+                    <img src="Worldla/imgs/how3.gif" alt="how3" />
                 </li>
 
                 

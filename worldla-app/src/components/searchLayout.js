@@ -7,6 +7,22 @@ import WorldmapApp from "./worldmap";
 import InfoComponent from "./languageInfo";
 import InstructionsBox from "./instructions";
 import { ImHome, ImMap, ImAirplane, ImSearch } from "react-icons/im";
+import { FaSearch as SearchIcon } from "react-icons/fa";
+import styled from 'styled-components';
+
+
+// ? Styling
+
+const SearchDiv = styled.div `
+    display: inline-block;
+
+    svg {
+        margin-right: 5px;
+        position: relative;
+        top: 3px;
+    }
+
+`
 
 
 
@@ -250,8 +266,12 @@ if (divArray.includes(element.id)) {
         {/* <button onClick={newTest}>test</button> */}
         <div id="searchBox">
         <div className="worldlaSearch">
+            <SearchDiv>
+            {/* <ImSearch /> */}
+            <SearchIcon/>
+            <input type="text" id="langSearch" name="language" placeholder="search a language"/>
 
-            <input type="search" id="langSearch" name="language" placeholder="search a language"/>
+            </SearchDiv>
             <button id="searchButton" onClick={(e) => {newTest(e); newerTest();}}>Search</button> 
             <button id="clearButton" onClick={() => {props.clear(); clearLanguages();}}>Clear Map</button>
         </div>
