@@ -106,7 +106,7 @@ function Home() {
     </div>
 
     </div>
-      <Link to="instructionsBox" smooth={true} offset={0} duration={100} onClick={showInstructions} id="startButton" style={buttonStatus}>
+      <Link to="startScroll" smooth={true} offset={10} duration={500} onClick={showInstructions} id="startButton" style={buttonStatus}>
           Start
       </Link>
       
@@ -116,6 +116,8 @@ function Home() {
       </Link>
       {/* <StartButton onClick={showInstructions}>Get Started</StartButton> */}
     </ZoomDiv>
+
+    <div id='startScroll'></div>
 
     <div style={clickedStatus}>
      <InstructionsBox/>
