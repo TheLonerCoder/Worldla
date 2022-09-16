@@ -238,6 +238,18 @@ button {
   margin-top: 10px;
 }
 
+.worldlaSearch svg:hover {
+  cursor: default;
+}
+
+.worldlaSearch button {
+  cursor: pointer;
+}
+
+#refreshButton {
+  cursor: pointer;
+}
+
 @media (max-width: 1130px) {
   .searchContainer {
     width: 200px;

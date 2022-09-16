@@ -400,6 +400,20 @@ button {
 
 .worldlaSearch {
     margin-top: 10px;
+
+    svg {
+        &:hover {
+            cursor: default;
+        }
+    }
+
+    button {
+        cursor: pointer;
+    }
+}
+
+#refreshButton {
+    cursor: pointer;
 }
 
 
