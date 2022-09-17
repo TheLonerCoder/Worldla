@@ -126,6 +126,9 @@ svg {
   #gridbody #grid1 {
     margin-right: 0px;
   }
+  #gridbody #grid2 ul {
+    margin-bottom: 40px;
+  }
   #howto {
     font-size: 1.8rem;
   }
