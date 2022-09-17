@@ -1,11 +1,13 @@
 import React, {useState} from 'react';
+import '../styles/home.css';
 import InstructionsBox from './instructions';
 import styled, { keyframes } from 'styled-components';
 import { zoomIn, zoomInDown } from 'react-animations';
 import { ImHome, ImMap, ImAirplane, ImSearch } from "react-icons/im";
 import { GiWorld, GiBookshelf } from "react-icons/gi";
+import {Link as RouterLink} from 'react-router-dom';
 import { Link } from 'react-scroll';
-import { BsChevronCompactDown as DownArrow } from "react-icons/bs";
+import { BsChevronCompactDown as DownArrow, BsFillArrowUpCircleFill as ArrowUp } from "react-icons/bs";
 // import WorldmapBackground from ''
 
 // ? Styles
@@ -117,10 +119,20 @@ function Home() {
       {/* <StartButton onClick={showInstructions}>Get Started</StartButton> */}
     </ZoomDiv>
 
+    <div style={{display: 'none'}}>
+      <ul>
+        <li>
+          <ArrowUp id='homeUpArrow' size={30}/>
+        </li>
+      </ul>
+    </div>
+
     <div id='startScroll'></div>
 
-    <div style={clickedStatus}>
+    <div style={clickedStatus} id='instructions'>
      <InstructionsBox/>
+
+     <RouterLink to='/app' id='mapButton'>MAP</RouterLink>
     </div>
 
     </div>
