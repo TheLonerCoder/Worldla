@@ -5,6 +5,7 @@
   top: 10px;
   margin-right: auto;
   margin-left: 2rem;
+  padding-top: 15px;
 }
 
 .backgroundGrad {
@@ -102,7 +103,7 @@ svg {
 
 #gridbody #grid2 {
   display: inline-block;
-  min-width: 220px;
+  min-width: 250px;
   width: 40vw;
   max-width: 500px;
 }
@@ -119,5 +120,14 @@ svg {
 
 #gridbody #grid2 ul li {
   padding: 5px 0;
+}
+
+@media (max-width: 515px) {
+  #gridbody #grid1 {
+    margin-right: 0px;
+  }
+  #howto {
+    font-size: 1.8rem;
+  }
 }
 /*# sourceMappingURL=header.css.map */
