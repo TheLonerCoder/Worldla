@@ -417,6 +417,32 @@ button {
 }
 
 
+
+#selectedList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#deleteSelected {
+    margin: auto 0;
+    padding-left: 5px;
+    // text-align: end;
+    // align-self: ;
+    
+
+    
+    &:hover {
+        cursor: pointer;
+        fill: red;
+        // color: green;
+    }
+}
+
+
+
 // ! Worldmap.js
 
 

@@ -5,6 +5,7 @@ import SearchBox from "./searchLayout";
 import '../styles/style.css';
 import { ImHome, ImMap, ImAirplane } from "react-icons/im";
 import { GiWorld } from "react-icons/gi";
+import { TiDeleteOutline as DeleteButton } from "react-icons/ti";
 
 function InfoComponent (props) {
 
@@ -69,7 +70,7 @@ idToLanguage();
     }} */}
 
                     {arrayLanguages.map(item => {
-                        return (<li>{item}</li>)
+                        return (<li id="selectedList">{item} <DeleteButton id="deleteSelected" size={25}/></li>)
                     })}
                 </ul>
 
