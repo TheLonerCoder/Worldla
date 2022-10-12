@@ -8,6 +8,7 @@ import { GiWorld, GiBookshelf } from "react-icons/gi";
 import {Link as RouterLink} from 'react-router-dom';
 import { Link } from 'react-scroll';
 import { BsChevronCompactDown as DownArrow, BsFillArrowUpCircleFill as ArrowUp } from "react-icons/bs";
+import {LazyLoadImage} from 'react-lazy-load-image-component';
 // import WorldmapBackground from ''
 
 // ? Styles
@@ -35,7 +36,12 @@ const ImageLayout = styled.img `
 
 `
 
-
+const LazyImage = {
+  alt: 'Image load failed',
+  width: "100%",
+  // minWidth: "100px",
+  maxWidth: "500px",
+}
 
 
 // const homePage = {
@@ -51,6 +57,30 @@ const zoomAnimation = keyframes`${zoomIn}`;
 const ZoomDiv = styled.div`
     animation: 2s ${zoomAnimation};
 `
+
+
+
+
+// ? Components
+
+
+const HomeImages = ( image ) => {
+  return (
+    <div>
+      <LazyLoadImage
+        alt={LazyImage.alt}
+        effect="blur"
+        height={LazyImage.height}
+        src={image} // use normal <img> attributes as props
+        width={LazyImage.width} 
+        style={LazyImage}
+        placeholderSrc={image}
+        />
+      {/* <span>{image.caption}</span> */}
+    </div>
+
+  )
+  };
 
 
 
@@ -93,7 +123,8 @@ function Home() {
       Worlda is a platform that helps you become more aware of how learning a language opens up doors for you. It'll give resources to learn languages, show you where you can use them, etc.
       </p>
       
-      <ImageLayout src="Worldla/imgs/cultural.jpg" alt="" />
+      {HomeImages('Worldla/imgs/cultural.jpg')}
+      {/* <ImageLayout src="Worldla/imgs/cultural.jpg" alt="" /> */}
     </div>
 
     <div id='grid2'>
@@ -108,6 +139,7 @@ function Home() {
 
       </ul>
 
+      {/* {HomeImages('Worldla/imgs/worldlawhite.jpg')} */}
       <ImageLayout src={currentImage} alt='' onMouseOver={changeToBlack} onMouseLeave={changeToWhite}/>
     </div>
 
