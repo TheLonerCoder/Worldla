@@ -11,21 +11,22 @@ import { BsChevronCompactDown as DownArrow, BsFillArrowUpCircleFill as ArrowUp }
 // import WorldmapBackground from ''
 
 // ? Styles
-const StartButton = styled.a `
-    list-style: none;
-    background-color: rgb(0, 168, 73);
-    color: white;
-    padding: 10px 20px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    font-size: 1.2rem;
+// const StartButton = styled.a `
+//     list-style: none;
+//     background-color: rgb(0, 168, 73);
+//     color: white;
+//     padding: 10px 20px;
+//     border-radius: 10px;
+//     margin-bottom: 10px;
+//     font-size: 1.2rem;
 
 
-    &: hover {
-        background-color: rgba(0, 168, 73, 0.7);
-        cursor: pointer;
-    }
-`
+//     &: hover {
+//         background-color: rgba(0, 168, 73, 0.7);
+//         cursor: pointer;
+//     }
+// `
+// sd;lfs
 
 const ImageLayout = styled.img `
   width: 100%;
@@ -33,6 +34,9 @@ const ImageLayout = styled.img `
   
 
 `
+
+
+
 
 // const homePage = {
 //   backgroundImage: 
