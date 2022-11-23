@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import countryLanguages from "../data/languages";
 import { countryData } from '../data/countries';
 import '../styles/style.css';
+import '../styles/worldmap.css';
 import { FaGlobeAmericas, FaGlobeAsia, FaGlobeAfrica, FaGlobeEurope } from 'react-icons/fa'
 import WorldmapApp from "./worldmap";
 import InfoComponent from "./languageInfo";
