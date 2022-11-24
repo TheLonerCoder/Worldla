@@ -147,7 +147,9 @@
     // color: darken($color: white, $amount: 10);
     color: gray;
     padding: 4px 0 6px 0;
-    background-color: white;
+    //? old color:
+    // background-color: white; 
+    background-color: rgba($color: white, $alpha: 0.5);
 
 
     // box-shadow: inset 1px 1px 2px darkgreen;
