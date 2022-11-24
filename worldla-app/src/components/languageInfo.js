@@ -70,7 +70,7 @@ idToLanguage();
     }} */}
 
                     {arrayLanguages.map(item => {
-                        return (<li id="selectedList">{item} <DeleteButton id="deleteSelected" size={25}/></li>)
+                        return (<li id="selectedList"><p>{item}</p><DeleteButton id="deleteSelected" size={30}/></li>)
                     })}
                 </ul>
 
